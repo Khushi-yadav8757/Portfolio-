@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushi Kumari Yadav | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+    body{background:linear-gradient(135deg,#141e30,#243b55);color:#fff}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;position:fixed;width:100%;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);z-index:1000}
+    header h2{color:#00f5d4}
+    nav a{margin-left:20px;color:#fff;text-decoration:none;font-weight:500;transition:.3s}
+    nav a:hover{color:#00f5d4}
+    section{padding:120px 8% 80px}
+    .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;min-height:100vh}
+    .hero-text{max-width:600px}
+    .hero-text h1{font-size:48px}
+    .hero-text span{color:#00f5d4}
+    .hero-text p{margin-top:15px;font-size:18px}
+    .btn{background:#00f5d4;padding:12px 25px;border-radius:30px;color:#000;text-decoration:none;display:inline-block;margin-top:25px;font-weight:600;transition:.3s}
+    .btn:hover{transform:scale(1.05)}
+    .hero img{width:300px;border-radius:50%;border:4px solid #00f5d4;box-shadow:0 0 30px rgba(0,245,212,.5)}
+    h2{margin-bottom:30px;color:#00f5d4;text-align:center}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+    .card{background:rgba(255,255,255,.05);padding:25px;border-radius:20px;backdrop-filter:blur(10px);transition:.3s}
+    .card:hover{transform:translateY(-10px)}
+    ul{list-style:none}
+    li{margin-bottom:10px}
+    .contact{text-align:center}
+    .contact a{color:#00f5d4;text-decoration:none}
+    form{display:flex;flex-direction:column;gap:15px;max-width:400px;margin:20px auto}
+    input,textarea{padding:10px;border:none;border-radius:8px}
+    footer{text-align:center;padding:20px;background:rgba(0,0,0,.6)}
+    @media(max-width:768px){.hero{flex-direction:column;text-align:center}.hero img{margin-top:30px}.hero-text h1{font-size:32px}}
+  </style>
+</head>
+<body>
+<header>
+  <h2>Khushi Yadav</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Khushi Kumari Yadav</span></h1>
+    <p>Aspiring Data Analyst skilled in Python, SQL, C++, Data Visualization & Business Insights.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+  </div>
+  <img src="profile.jpg" alt="Khushi Profile Photo">
+</section><section id="about">
+  <h2>About Me</h2>
+  <p style="text-align:center;max-width:800px;margin:auto">Detail-oriented Data Analyst passionate about transforming raw data into actionable insights using Python, SQL, Excel and visualization tools.</p>
+</section><section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>C++</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Data Analytics</h3>
+      <ul>
+        <li>Data Cleaning</li>
+        <li>EDA</li>
+        <li>Data Visualization</li>
+        <li>Statistics</li>
+        <li>Business Intelligence</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>Excel</li>
+        <li>Kaggle</li>
+        <li>LeetCode</li>
+      </ul>
+    </div>
+  </div>
+</section><section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Sales Data Analysis</h3>
+      <p>Python + SQL project analyzing sales trends.</p>
+      <a href="https://github.com/Khushi-yadav8757" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Power BI Dashboard</h3>
+      <p>Interactive dashboard for KPI tracking.</p>
+      <a href="https://github.com/Khushi-yadav8757" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio using HTML, CSS, JS.</p>
+      <a href="https://github.com/Khushi-yadav8757" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section><section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:khushiyad152@gmail.com">khushiyad152@gmail.com</a></p>
+  <p>Mobile: 8757595152</p>
+  <p><a href="https://www.linkedin.com/in/khushi-yadav8757/" target="_blank">LinkedIn</a></p>
+  <p><a href="https://github.com/Khushi-yadav8757" target="_blank">GitHub</a></p>
+  <p><a href="https://leetcode.com/u/khushi_kyad/" target="_blank">LeetCode</a></p>
+  <p><a href="https://www.kaggle.com/Khushiyad001" target="_blank">Kaggle</a></p>
+  <form action="mailto:khushiyad152@gmail.com" method="post" enctype="text/plain">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section><footer>
+  <p>© 2026 Khushi Kumari Yadav | Data Analyst Portfolio</p>
+</footer><script>
+  gsap.from(".hero-text",{opacity:0,y:50,duration:1});
+  gsap.from(".hero img",{opacity:0,x:50,duration:1});
+</script></body>
+</html>
