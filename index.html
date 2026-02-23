@@ -11,7 +11,7 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
 
 body{
-background:#0f172a;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:#fff;
 }
 
@@ -23,19 +23,19 @@ align-items:center;
 padding:20px 8%;
 position:fixed;
 width:100%;
-background:rgba(0,0,0,0.6);
+background:rgba(255,255,255,0.08);
 backdrop-filter:blur(10px);
 z-index:1000
 }
-header h2{color:#22c55e}
+header h2{color:#00f5d4}
 nav a{
-margin-left:20px;
+margin-left:25px;
 color:#fff;
 text-decoration:none;
 font-weight:500;
 transition:.3s
 }
-nav a:hover{color:#22c55e}
+nav a:hover{color:#00f5d4}
 
 /* SECTIONS */
 section{padding:120px 8% 80px}
@@ -51,14 +51,17 @@ min-height:100vh
 
 .hero-text{max-width:600px}
 
-.hero-text h1{font-size:48px}
+.hero-text h1{
+font-size:50px;
+background:linear-gradient(90deg,#00f5d4,#00bbf9);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent
+}
 
-.hero-text span{color:#22c55e}
-
-.hero-text p{margin-top:15px;font-size:18px}
+.hero-text p{margin-top:15px;font-size:18px;color:#e2e8f0}
 
 .btn{
-background:#22c55e;
+background:linear-gradient(90deg,#00f5d4,#00bbf9);
 padding:12px 25px;
 border-radius:30px;
 color:#000;
@@ -68,23 +71,26 @@ margin-top:25px;
 font-weight:600;
 transition:.3s
 }
-.btn:hover{transform:scale(1.05)}
+.btn:hover{transform:scale(1.08)}
 
 .hero img{
-width:280px;
+width:300px;
 border-radius:50%;
-border:4px solid #22c55e;
-box-shadow:0 0 30px rgba(34,197,94,.5)
+border:4px solid #00f5d4;
+box-shadow:0 0 40px rgba(0,245,212,.6)
 }
 
 /* HEADINGS */
 h2{
-margin-bottom:30px;
-color:#22c55e;
-text-align:center
+margin-bottom:40px;
+text-align:center;
+font-size:32px;
+background:linear-gradient(90deg,#00f5d4,#00bbf9);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent
 }
 
-/* CARDS */
+/* GLASS CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -92,35 +98,41 @@ gap:25px
 }
 
 .card{
-background:#1e293b;
+background:rgba(255,255,255,.08);
 padding:25px;
-border-radius:15px;
+border-radius:20px;
+backdrop-filter:blur(10px);
 transition:.3s
 }
-.card:hover{transform:translateY(-8px)}
+.card:hover{transform:translateY(-10px);box-shadow:0 0 20px rgba(0,245,212,.4)}
 
 ul{list-style:none}
 li{margin-bottom:10px}
 
-/* PROJECT */
-.project-link{
-color:#22c55e;
-text-decoration:none;
-font-weight:600
+/* SKILL BARS */
+.skill{margin-bottom:20px}
+.skill span{display:block;margin-bottom:6px}
+.bar{
+background:#1e293b;
+border-radius:20px;
+overflow:hidden
+}
+.bar div{
+height:10px;
+background:linear-gradient(90deg,#00f5d4,#00bbf9)
 }
 
 /* CONTACT */
 .contact{text-align:center}
-.contact a{color:#22c55e;text-decoration:none}
+.contact a{color:#00f5d4;text-decoration:none}
 
 /* FOOTER */
 footer{
 text-align:center;
 padding:20px;
-background:#020617
+background:rgba(0,0,0,0.6)
 }
 
-/* MOBILE */
 @media(max-width:768px){
 .hero{flex-direction:column;text-align:center}
 .hero img{margin-top:30px}
@@ -142,96 +154,73 @@ background:#020617
 </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="home">
 <div class="hero-text">
-<h1>Hi, I'm <span>Khushi Kumari Yadav</span></h1>
-<p>Aspiring Data Analyst skilled in Python, SQL, Excel & Power BI. I transform data into business insights.</p>
+<h1>Data Analyst & Problem Solver</h1>
+<p>I analyze data, build dashboards & generate insights that help businesses grow.</p>
 
 <a href="KhushiKYadResume.pdf" download class="btn">Download Resume</a>
 <a href="#contact" class="btn">Hire Me</a>
-
 </div>
 
 <img src="IMG_20251119_182312_148.jpg">
 </section>
 
-<!-- ABOUT -->
 <section id="about">
 <h2>About Me</h2>
 <p style="text-align:center;max-width:800px;margin:auto">
-Data Analyst passionate about solving business problems using data. 
-Experienced in data cleaning, visualization, SQL queries, dashboards and analytics.
+Passionate Data Analyst skilled in Python, SQL, Excel & Power BI. 
+I love turning raw data into actionable business insights.
 </p>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 
-<div class="cards">
-
-<div class="card">
-<h3>Programming</h3>
-<ul>
-<li>Python</li>
-<li>SQL</li>
-<li>C++</li>
-<li>HTML, CSS</li>
-</ul>
+<div class="skill">
+<span>Python</span>
+<div class="bar"><div style="width:85%"></div></div>
 </div>
 
-<div class="card">
-<h3>Analytics</h3>
-<ul>
-<li>Data Cleaning</li>
-<li>EDA</li>
-<li>Statistics</li>
-<li>Business Analysis</li>
-</ul>
+<div class="skill">
+<span>SQL</span>
+<div class="bar"><div style="width:90%"></div></div>
 </div>
 
-<div class="card">
-<h3>Tools</h3>
-<ul>
-<li>Power BI</li>
-<li>Excel</li>
-<li>GitHub</li>
-<li>Kaggle</li>
-</ul>
+<div class="skill">
+<span>Power BI</span>
+<div class="bar"><div style="width:80%"></div></div>
 </div>
 
+<div class="skill">
+<span>Excel</span>
+<div class="bar"><div style="width:88%"></div></div>
 </div>
+
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
-
 <div class="cards">
 
 <div class="card">
 <h3>Sales Data Analysis</h3>
-<p>Python + SQL project analyzing trends & insights.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757" target="_blank">View Project</a>
+<p>Python & SQL insights on sales trends.</p>
 </div>
 
 <div class="card">
 <h3>Power BI Dashboard</h3>
-<p>Interactive KPI dashboard for business decisions.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757" target="_blank">View Project</a>
+<p>KPI dashboards for business decisions.</p>
 </div>
 
 <div class="card">
 <h3>Customer Segmentation</h3>
-<p>Machine learning model for grouping customers.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757" target="_blank">View Project</a>
+<p>ML model for user grouping.</p>
 </div>
 
 </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact">
 <h2>Contact Me</h2>
 
@@ -240,13 +229,11 @@ Experienced in data cleaning, visualization, SQL queries, dashboards and analyti
 
 <p><a href="https://www.linkedin.com/in/khushi-yadav8757/" target="_blank">LinkedIn</a></p>
 <p><a href="https://github.com/Khushi-yadav8757" target="_blank">GitHub</a></p>
-<p><a href="https://leetcode.com/u/khushi_kyad/" target="_blank">LeetCode</a></p>
-<p><a href="https://www.kaggle.com/Khushiyad001" target="_blank">Kaggle</a></p>
 
 </section>
 
 <footer>
-<p>© 2026 Khushi Kumari Yadav | Data Analyst Portfolio</p>
+<p>© 2026 Khushi Kumari Yadav | Data Analyst</p>
 </footer>
 
 </body>
