@@ -54,13 +54,19 @@ min-height:100vh;
 
 .hero-text{max-width:600px}
 
-.hero-text h1{font-size:50px}
+.hero-text h1{font-size:48px}
 .hero-text span{color:#00f5d4}
 
 .hero-text p{
-margin-top:20px;
+margin-top:15px;
 font-size:18px;
 line-height:1.6;
+}
+
+.tagline{
+margin-top:10px;
+font-size:20px;
+color:#c7f9ff;
 }
 
 .btn{
@@ -82,15 +88,15 @@ border-radius:20px;
 box-shadow:0 10px 40px rgba(0,0,0,0.5);
 }
 
-/* HEADING */
+/* HEADINGS */
 h2{
 text-align:center;
-margin-bottom:50px;
+margin-bottom:40px;
 color:#00f5d4;
 font-size:32px;
 }
 
-/* SKILLS GRID */
+/* SKILLS */
 .skills-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
@@ -102,17 +108,17 @@ background:rgba(255,255,255,0.05);
 padding:18px;
 border-radius:12px;
 text-align:center;
-font-weight:500;
 transition:.3s;
 backdrop-filter:blur(10px);
 }
+.skill-box img{width:35px;margin-bottom:8px;}
 .skill-box:hover{
 background:#00f5d4;
 color:black;
 transform:translateY(-6px);
 }
 
-/* PROJECT GRID */
+/* PROJECTS */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -134,6 +140,12 @@ font-weight:600;
 margin-bottom:10px;
 }
 
+.tech{
+margin-top:8px;
+color:#00f5d4;
+font-size:14px;
+}
+
 .project-link{
 display:inline-block;
 margin-top:10px;
@@ -142,7 +154,7 @@ text-decoration:none;
 font-weight:500;
 }
 
-/* CONTACT GRID */
+/* CONTACT */
 .contact-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
@@ -190,6 +202,7 @@ background:rgba(0,0,0,0.5);
 <header>
 <h2>Khushi Yadav</h2>
 <nav>
+<a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
@@ -200,28 +213,49 @@ background:rgba(0,0,0,0.5);
 <section class="hero">
 <div class="hero-text">
 <h1>Hi, I'm <span>Khushi Kumari Yadav</span></h1>
+<p class="tagline">Turning Data into Business Decisions 📊</p>
 <p>Data Analyst skilled in Python, SQL, Power BI & Business Insights.</p>
+
 <a href="KhushiKYadResume.pdf" download class="btn">Download Resume</a>
+<a href="#projects" class="btn" style="background:white;margin-left:10px;">View Projects</a>
 </div>
+
 <img src="IMG_20251119_182312_148.jpg">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p style="max-width:800px;margin:auto;text-align:center;line-height:1.7">
+Data Analyst passionate about solving business problems using data.
+Skilled in SQL, Python, Power BI and statistics with hands-on project experience in real datasets.
+</p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
 <h2>Technical Skills</h2>
 <div class="skills-grid">
-<div class="skill-box">Python</div>
-<div class="skill-box">SQL</div>
-<div class="skill-box">C++</div>
-<div class="skill-box">Power BI</div>
-<div class="skill-box">Excel</div>
-<div class="skill-box">Data Analysis</div>
-<div class="skill-box">ETL Pipeline</div>
-<div class="skill-box">Statistics</div>
-<div class="skill-box">Git</div>
-<div class="skill-box">GitHub</div>
-<div class="skill-box">MySQL</div>
-<div class="skill-box">PostgreSQL</div>
+
+<div class="skill-box"><img src="https://img.icons8.com/color/48/python.png"/><p>Python</p></div>
+<div class="skill-box"><img src="https://img.icons8.com/color/48/sql.png"/><p>SQL</p></div>
+<div class="skill-box"><img src="https://img.icons8.com/color/48/power-bi.png"/><p>Power BI</p></div>
+<div class="skill-box"><img src="https://img.icons8.com/color/48/excel.png"/><p>Excel</p></div>
+<div class="skill-box"><img src="https://img.icons8.com/color/48/git.png"/><p>Git</p></div>
+<div class="skill-box"><img src="https://img.icons8.com/color/48/github.png"/><p>GitHub</p></div>
+
+</div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section>
+<h2>Highlights</h2>
+<div class="skills-grid">
+<div class="skill-box">📊 Built 5+ dashboards</div>
+<div class="skill-box">🐍 Python EDA Projects</div>
+<div class="skill-box">🧠 SQL Case Studies</div>
+<div class="skill-box">💻 200+ DSA problems</div>
+<div class="skill-box">📈 Business Insights Projects</div>
 </div>
 </section>
 
@@ -231,33 +265,24 @@ background:rgba(0,0,0,0.5);
 <div class="grid">
 
 <div class="card">
-<div class="project-title">Techno Sales Performance Dashboard (Power BI)</div>
-<p> This project is a Power BI dashboard developed as part of my Hunar Internship Assignment to analyze techno retail sales data and generate meaningful business insights..</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757/TECHNO-SALES-PERFORMANCE-DASHBOARD" target="_blank">View Project</a>
+<div class="project-title">Techno Sales Dashboard</div>
+<p>Analyzed retail transactions to identify revenue trends and category performance.</p>
+<div class="tech">Tech: Power BI | Excel | DAX</div>
+<a class="project-link" href="https://github.com/Khushi-yadav8757" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<div class="project-title">Smart Parking System using Computer Vision</div>
-<p>A Computer Vision based Smart Parking System that detects free and occupied parking spaces in real-time from video feeds using Python and OpenCV.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757/Smart-Parking-System" target="_blank">View Project</a>
-</div>
-
-  <div class="card">
-<div class="project-title">Python Diwali Sales Analysis</div>
-<p>This project focuses on analyzing Diwali sales data using Python to extract meaningful business insights. It covers data cleaning, exploratory data analysis (EDA), and visualization to understand customer behavior, product performance, and sales trends.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757/Python_Diwali_Sales_Analysis" target="_blank">View Project</a>
-</div>
-
-  <div class="card">
-<div class="project-title">COVID-19 Data Analysis Dashboard </div>
-<p> Interactive COVID-19 Analytics Dashboard built using Microsoft Power BI for real-world data visualization and insights.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757/Covid-19-Data-Analysis-Project-" target="_blank">View Project</a>
+<div class="project-title">Smart Parking System</div>
+<p>Computer vision system detecting free & occupied parking spaces.</p>
+<div class="tech">Tech: Python | OpenCV</div>
+<a class="project-link" href="https://github.com/Khushi-yadav8757" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<div class="project-title">Zepto E-commerce SQL Data Analyst Portfolio Project</div>
-<p>This is a complete, real-world data analyst portfolio project based on an e-commerce inventory dataset scraped from Zepto — one of India’s fastest-growing quick-commerce startups.</p>
-<a class="project-link" href="https://github.com/Khushi-yadav8757/Zepto-Retail-Data-Analysis-SQL-" target="_blank">View Project</a>
+<div class="project-title">Diwali Sales Analysis</div>
+<p>EDA on customer purchase behaviour and product performance.</p>
+<div class="tech">Tech: Python | Pandas | Matplotlib</div>
+<a class="project-link" href="https://github.com/Khushi-yadav8757" target="_blank">View Project</a>
 </div>
 
 </div>
@@ -279,31 +304,22 @@ background:rgba(0,0,0,0.5);
 <span>Phone</span>
 </a>
 
-<a href="https://www.linkedin.com/in/khushi-yadav8757/" target="_blank" class="contact-box">
+<a href="https://www.linkedin.com/" target="_blank" class="contact-box">
 <img src="https://img.icons8.com/color/48/linkedin.png"/>
 <span>LinkedIn</span>
 </a>
 
-<a href="https://github.com/Khushi-yadav8757" target="_blank" class="contact-box">
+<a href="https://github.com/" target="_blank" class="contact-box">
 <img src="https://img.icons8.com/ios-filled/50/github.png"/>
 <span>GitHub</span>
-</a>
-
-<a href="https://leetcode.com/u/khushi_kyad/" target="_blank" class="contact-box">
-<img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png"/>
-<span>LeetCode</span>
-</a>
-
-<a href="https://www.kaggle.com/khushikyad001" target="_blank" class="contact-box">
-<img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-kaggle-an-online-community-of-data-scientists-and-machine-learners-owned-by-google-logo-color-tal-revivo.png"/>
-<span>Kaggle</span>
 </a>
 
 </div>
 </section>
 
 <footer>
-© 2026 Khushi Kumari Yadav | Data Analyst Portfolio
+<p>© 2026 Khushi Kumari Yadav</p>
+<p>Data Analyst | Open to Opportunities</p>
 </footer>
 
 </body>
